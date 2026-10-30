@@ -1,0 +1,16 @@
+{
+  "name": "example-room-fiducials",
+  "dictionary": "DICT_4X4_50",
+  "markers": [
+    {
+      "marker_id": 0,
+      "size_m": 0.12,
+      "marker_to_world": [
+        [1.0, 0.0, 0.0, 0.0],
+        [0.0, 1.0, 0.0, 0.0],
+        [0.0, 0.0, 1.0, 0.0],
+        [0.0, 0.0, 0.0, 1.0]
+      ]
+    }
+  ]
+}

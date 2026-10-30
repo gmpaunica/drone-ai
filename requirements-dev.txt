@@ -1,0 +1,4 @@
+-r requirements-base.txt
+-r requirements-diagnostics.txt
+pytest>=8.3,<9
+pytest-cov>=5,<7

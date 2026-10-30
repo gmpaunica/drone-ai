@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="297mm" height="210mm" viewBox="0 0 297 210">
+  <title>Drone AI camera calibration checkerboard</title>
+  <desc>10 by 7 squares, 24 millimetres each, providing 9 by 6 inner corners.</desc>
+  <rect width="297" height="210" fill="white"/>
+  <defs>
+    <pattern id="checker" width="48" height="48" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="24" height="24" fill="black"/>
+      <rect x="24" y="24" width="24" height="24" fill="black"/>
+    </pattern>
+  </defs>
+  <rect x="28.5" y="21" width="240" height="168" fill="url(#checker)"/>
+  <text x="148.5" y="201" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="4" fill="black">
+    Print at 100% / actual size — each square must measure 24 mm
+  </text>
+</svg>

@@ -1,0 +1,88 @@
+# All values are optional overlays on code-owned safe defaults.
+# The loader rejects unknown keys, wrong types, non-finite values, and any
+# value that would weaken the documented hard safety caps.
+
+[flight]
+min_altitude_m = 0.0
+max_altitude_m = 3.0
+min_movement_m = 0.2
+max_movement_m = 3.0
+max_rotation_degrees = 180.0
+takeoff_altitude_m = 1.0
+cruise_speed_mps = 0.2
+max_speed_mps = 0.5
+command_timeout_s = 2.0
+min_takeoff_battery_percent = 30
+critical_battery_percent = 15
+
+[follow]
+rotation_degrees = 10.0
+movement_step_m = 0.3
+horizontal_dead_zone = 0.12
+target_size_min = 0.08
+target_size_max = 0.28
+control_rate_hz = 2.0
+
+[vision]
+confidence = 0.50
+model_name = "yolo26n.pt"
+camera_index = 0
+target_classes = ["person"]
+calibration_file = ""
+
+[llm]
+ollama_url = "http://localhost:11434"
+model_name = "qwen3:4b-instruct"
+request_timeout_s = 120.0
+max_command_characters = 500
+
+[plan]
+max_steps = 8
+max_total_distance_m = 6.0
+max_total_rotation_degrees = 360.0
+max_plan_age_s = 30.0
+
+[search]
+rotation_step_degrees = 20.0
+max_scan_degrees = 360.0
+control_rate_hz = 2.0
+
+[preflight]
+min_frame_width = 160
+min_frame_height = 120
+require_three_channel_bgr = true
+max_landed_altitude_m = 0.3
+
+[manual]
+horizontal_step_m = 0.2
+vertical_step_m = 0.2
+rotation_step_degrees = 20.0
+max_command_rate_hz = 2.0
+tello_rc_velocity = 40
+tello_rc_step_duration_s = 0.75
+
+[watchdog]
+max_airborne_time_s = 480.0
+check_rate_hz = 2.0
+max_consecutive_telemetry_failures = 3
+
+[calibration]
+checkerboard_columns = 9
+checkerboard_rows = 6
+square_size_m = 0.024
+minimum_views = 8
+maximum_rms_error_px = 1.0
+sample_every_frames = 5
+
+[odometry]
+maximum_features = 1500
+minimum_matches = 20
+minimum_inliers = 15
+ratio_test = 0.75
+ransac_threshold_px = 1.0
+
+[fiducial]
+maximum_reprojection_error_px = 3.0
+minimum_marker_side_px = 20.0
+maximum_pose_disagreement_m = 0.25
+maximum_pose_disagreement_degrees = 15.0

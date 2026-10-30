@@ -1,0 +1,17 @@
+{
+  "name": "example-room",
+  "width_cells": 12,
+  "height_cells": 10,
+  "resolution_m": 0.2,
+  "world_origin_x_m": 0.0,
+  "world_origin_y_m": 0.0,
+  "grid_yaw_degrees": 0.0,
+  "clearance_cells": 1,
+  "blocked_cells": [
+    {"x": 5, "y": 2},
+    {"x": 5, "y": 3},
+    {"x": 5, "y": 4},
+    {"x": 5, "y": 5},
+    {"x": 5, "y": 6}
+  ]
+}

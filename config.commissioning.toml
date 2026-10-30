@@ -1,0 +1,7 @@
+# Short first-hover overlay. Battery thresholds use the normal application
+# defaults: takeoff is allowed at 30% or higher and critical landing is 15%.
+
+[watchdog]
+max_airborne_time_s = 5.0
+check_rate_hz = 2.0
+max_consecutive_telemetry_failures = 3

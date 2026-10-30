@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+config.toml
+*.local.toml
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# Generated and potentially privacy-sensitive artifacts
+*.pt
+*.onnx
+*.engine
+captures/
+recordings/
+calibration/*.json
+maps/*.json
+!maps/example-*.json
+*.log
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
